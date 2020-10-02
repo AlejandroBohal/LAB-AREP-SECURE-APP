@@ -7,12 +7,12 @@ services:
     image: elcostalitoalegre/sparkweblive:loginservice
     container_name: LoadBalancerAPP
     ports:
-      - "8091:6000"
+      - "5000:6000"
   other:
     build:
       context: ../OtherService
       dockerfile: Dockerfile
     image: elcostalitoalegre/sparkweblive:otherservice   
     ports:
-      - "8092:6000"
+      - "5001:6000"
   
