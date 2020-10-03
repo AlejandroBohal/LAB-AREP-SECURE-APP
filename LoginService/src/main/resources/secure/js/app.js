@@ -13,7 +13,7 @@ let app = function (){
     const connectionExample = () =>{
         axios.get('/hello').then(res=>{
             $("#exampleConnection").empty();
-            $("#exampleConnection").append(res);
+            $("#exampleConnection").append(res.data);
         })
     };
     return {

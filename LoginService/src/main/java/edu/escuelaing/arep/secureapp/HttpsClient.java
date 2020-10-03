@@ -5,6 +5,7 @@ import javax.net.ssl.TrustManagerFactory;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.security.KeyManagementException;
 import java.security.KeyStore;
 import java.security.KeyStoreException;
@@ -14,7 +15,7 @@ import java.security.cert.CertificateException;
 
 public class HttpsClient {
     public static void init() {
-        File trustStoreFile = new File("keystores/myTrustStoreLogin");
+        File trustStoreFile = new File("keystores/myTrustStore");
         char[] trustStorePassword = "pansito".toCharArray();
         KeyStore trustStore = null;
         TrustManagerFactory tmf = null;
@@ -35,11 +36,11 @@ public class HttpsClient {
         }
     }
     public static String getServerInfo() throws IOException {
-        URL url = new URL("https://ec2-34-228-60-112.compute-1.amazonaws.com");
+        URL url = new URL("https://ec2-34-228-60-112.compute-1.amazonaws.com:5001/hello");
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("GET");
         con.setDoOutput(true);
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(con.getInputStream(), "utf-8"))) {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(con.getInputStream(), StandardCharsets.UTF_8))) {
             StringBuilder response = new StringBuilder();
             String responseLine = null;
             while ((responseLine = br.readLine()) != null) {
