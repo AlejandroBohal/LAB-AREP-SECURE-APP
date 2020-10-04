@@ -19,7 +19,7 @@ The architecture was defined in class and we can see an image of it below:
 The application is not running at the moment, however a video was made demonstrating the operation and the source code information was saved
 in two different repositories
 
-  -Login Service
+  - Login Service
   
   Continuos Integration
   
@@ -29,7 +29,7 @@ in two different repositories
   
   https://github.com/AlejandroBohal/LabArep-LoginService
   
-  -Logic Service (example)
+  - Logic Service (example)
   
   Continuos Integration
   
