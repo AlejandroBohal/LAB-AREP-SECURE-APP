@@ -1,6 +1,6 @@
 # LAB-AREP-SECURE-APP
 
-#Introduction
+# Introduction
 
 In this repository is a solution to the laboratory 7 of business architectures, we made a secure application in 
 all its fronts and ensure both authorization and authentication and accounting, we built a spark service that will be responsible for authenticating the respective users
