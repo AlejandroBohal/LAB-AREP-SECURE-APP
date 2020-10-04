@@ -21,7 +21,23 @@ in two different repositories
 
   -Login Service
   
+  Continuos Integration
+  
+  [![CircleCI](https://circleci.com/gh/AlejandroBohal/LabArep-LoginService.svg?style=svg)](https://circleci.com/gh/AlejandroBohal/LabArep-LoginService)
+  
+  Repository Link
+  
+  https://github.com/AlejandroBohal/LabArep-LoginService
+  
   -Logic Service (example)
+  
+  Continuos Integration
+  
+  [![CircleCI](https://circleci.com/gh/AlejandroBohal/Lab7Arep-ExampleService.svg?style=svg)](https://circleci.com/gh/AlejandroBohal/Lab7Arep-ExampleService)
+  
+  Repository Link
+  
+  https://github.com/AlejandroBohal/Lab7Arep-ExampleService
 
 
 ## Documentation and testing
