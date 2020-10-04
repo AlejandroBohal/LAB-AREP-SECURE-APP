@@ -13,6 +13,22 @@ were shared between the two services, the login service and sample service.
 
 The architecture was defined in class and we can see an image of it below:
 
+![](https://media.discordapp.net/attachments/425125409621803010/762427803848933406/unknown.png?width=728&height=333)
+
+The two server components are located in 2 different instances of EC2 as shown in the following image:
+
+![](https://media.discordapp.net/attachments/352624122301513730/762429188674158602/unknown.png?width=728&height=127)
+
+For the java components, a docker was used and the containers were run in each of the machines, as can be seen in the following images:
+
+- Login Service
+
+![](https://media.discordapp.net/attachments/352624122301513730/762430070652403772/unknown.png?width=728&height=174)
+
+
+- Other Service
+
+![](https://media.discordapp.net/attachments/352624122301513730/762430388101971998/unknown.png?width=728&height=172)
 
 ## Run the app
 
